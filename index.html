@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joy for Jesus</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="hero-header">
+      <div class="header-content">
+        <img
+          src="https://i.imgur.com/Fba97bG.png"
+          alt="Joy For Jesus Banner"
+          onerror="this.style.display='none'"
+        />
+      </div>
+
+      <button
+        id="menuButton"
+        class="menu-button"
+        type="button"
+        aria-label="Open table of contents"
+        aria-controls="mainTabs"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <h1>PRAISE THE LORD IN ALL THAT YOU DO!</h1>
+
+    <p>
+      “The LORD your God is with you, the Mighty Warrior who saves. He will
+      take great DELIGHT in you; in his love he will no longer rebuke you, but
+      will rejoice over you with singing.”<br />
+      Zephaniah 3:17 NIV
+    </p>
+
+    <h2>
+      Instagram:
+      <a
+        class="instagram-link"
+        href="https://www.instagram.com/p.s.jesuslovessyou?stkn=MXA2c2ZrNW8xOTB1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        @p.s.jesuslovessyou
+      </a>
+    </h2>
+
+    <div id="frontTabs" class="front-tabs" aria-label="Table of contents">
+      <button class="tab-button active" data-tab="1" type="button">Home</button>
+      <button class="tab-button" data-tab="2" type="button">About Me</button>
+      <button class="tab-button" data-tab="3" type="button">Community</button>
+      <button class="tab-button" data-tab="4" type="button">Programs</button>
+      <button class="tab-button" data-tab="5" type="button">Social Impacts</button>
+      <button class="tab-button" data-tab="6" type="button">Volunteer</button>
+      <button class="tab-button" data-tab="7" type="button">J4J Apparel</button>
+    </div>
+
+    <div id="mainTabs" class="menu-tabs" aria-label="Table of contents" hidden>
+      <button class="tab-button active" data-tab="1" type="button">Home</button>
+      <button class="tab-button" data-tab="2" type="button">About Me</button>
+      <button class="tab-button" data-tab="3" type="button">Community</button>
+      <button class="tab-button" data-tab="4" type="button">Programs</button>
+      <button class="tab-button" data-tab="5" type="button">Social Impacts</button>
+      <button class="tab-button" data-tab="6" type="button">Volunteer</button>
+      <button class="tab-button" data-tab="7" type="button">J4J Apparel</button>
+    </div>
+
+    <div class="tab-panels">
+      <div id="tabPanel-1" class="tab-panel">
+        <p>My intro video and some curated content.</p>
+      </div>
+
+      <div id="tabPanel-2" class="tab-panel" hidden>
+        <p>
+          For undergrad, Yesenia received a Bachelor of Science in Mathematics
+          at California State University, San Marcos. Yesenia completed the dual
+          Master’s of Arts in Teaching and Teaching Credential program at the
+          University of California, Irvine as a Single-Subject Mathematics
+          Candidate in Summer of 2022. Next, she continued to grow in her
+          knowledge of math by completing her Master of Arts in Mathematics at
+          California State Fullerton in the summer of 2025.
+        </p>
+      </div>
+
+      <div id="tabPanel-3" class="tab-panel" hidden>
+        <p>Community updates, photos, and resources will go here.</p>
+      </div>
+
+      <div id="tabPanel-4" class="tab-panel" hidden>
+        <p>Learn about Joy for Jesus programs here.</p>
+      </div>
+
+      <div id="tabPanel-5" class="tab-panel" hidden>
+        <p>See the social impact Joy for Jesus is making in the community.</p>
+      </div>
+
+      <div id="tabPanel-6" class="tab-panel" hidden>
+        <p>Volunteer opportunities will go here.</p>
+      </div>
+
+      <div id="tabPanel-7" class="tab-panel" hidden>
+        <p>Joy for Jesus apparel information will go here.</p>
+      </div>
+    </div>
+
+    <section class="give-section">
+      <h1>GIVE</h1>
+
+      <p class="mission-statement">
+        Joy For Jesus is a non-profit organization whose vision is to empower
+        Latinx and underrepresented youth in South Orange County through
+        academic support/intervention, college access support, and
+        identity-affirming leadership activities—all at zero cost for the
+        underrepresented community, Camino Los Mares Apartments, San Clemente,
+        CA.
+      </p>
+
+      <button id="contactButton" class="main-button" type="button">
+        Donate
+      </button>
+
+      <div id="message"></div>
+    </section>
+
+    <section class="footer-cta">
+      <h1>Learn More</h1>
+
+      <button id="openFormBtn" class="main-button" type="button">
+        Contact
+      </button>
+
+      <h1>Helping Students Succeed</h1>
+
+      <button id="MoreBtn" class="main-button" type="button">
+        Learn More
+      </button>
+    </section>
+  </div>
+
+  <dialog id="formDialog" class="form-modal">
+    <div class="modal-content">
+      <button
+        id="closeFormBtn"
+        class="close-btn"
+        type="button"
+        aria-label="Close form"
+      >
+        ×
+      </button>
+
+      <iframe
+        src="https://forms.gle/mL5Z9JQSEfmww6Hg9"
+        title="Joy for Jesus Contact Form"
+      >
+        Loading…
+      </iframe>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
